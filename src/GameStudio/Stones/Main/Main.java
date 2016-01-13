@@ -9,7 +9,7 @@ import GameStudio.Stones.core.GameField;
 public class Main {
 
 	public static void main(String[] args) throws SQLException {
-		GameField field = new GameField(3);
+		GameField field = new GameField(5);
 		field.play();
 		
 		

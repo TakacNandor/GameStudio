@@ -52,7 +52,7 @@ public class GameField {
 		generate();
 		findNullPosition();
 		Random random = new Random();
-		for (int i = 0; i < 100; i++) {
+		for (int i = 0; i < 500; i++) {
 			switch (random.nextInt(4)) {
 			case 0:
 				if (!(getPositionOfNull()[0] == size - 1)) {
@@ -104,6 +104,7 @@ public class GameField {
 			playing = false;
 			showGameField();
 			System.out.println("You win!");
+			System.out.println("Your reward is: ( . Y . )");
 			System.out.println("Name: "+System.getProperty("user.name"));
 			System.out.println("Time: "+getPlayingSeconds());
 
